@@ -54,5 +54,17 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.GetComponent<Coin>() != null)
+        {
+            Coin coin1 = collision.gameObject.GetComponent<Coin>();
 
+            ScoreManager Score = FindObjectOfType<ScoreManager>();
+            Score.AddCoins(coin1.GetCoinWorth());
+            Score.AddScore(coin1.GetScoreWorth());
+
+            coin1.CoinGrabbed(); //Destroy Coins
+        }
+    }
 }
