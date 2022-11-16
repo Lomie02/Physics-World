@@ -12,7 +12,7 @@ public class ScoreManager : GameManager
     [Header("Results Texts")]
     [SerializeField] Text m_ScoreTextEnd;
     [SerializeField] Text m_CoinsGrabbedEnd;
-    [SerializeField] Text m_HighScoreText;
+    [SerializeField] Text m_CoinsTotalEnd;
 
     int m_ScoreCount;
     int m_CoinsCount;
@@ -56,8 +56,6 @@ public class ScoreManager : GameManager
 
     public void CompleteResults()
     {
-        m_Highscore = m_Data.GetHighScore();
-
         m_TotalCoins += m_CoinsCount;
         UpdateResults();
     }

@@ -12,7 +12,16 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu.unity
     guid: 164bfb70368c9e3448a172a86f1eb9ae
   - enabled: 1
-    path: Assets/Scenes/TutorialLevel.unity
+    path: Assets/Scenes/Stages/Garden/garden_level_01.unity
     guid: 3fc8acdd13e6c734bafef6554d6fdbcd
+  - enabled: 1
+    path: Assets/Scenes/Stages/Garden/garden_level_02.unity
+    guid: 2eb00418c140f7f4fb612ae4c4679999
+  - enabled: 1
+    path: Assets/Scenes/Stages/Garden/garden_level_03.unity
+    guid: 31f390ddbd2e58e44a417c20bdd07e5d
+  - enabled: 1
+    path: Assets/Scenes/stage_selection.unity
+    guid: 7e6f043121c5752458f9ce05163047fa
   m_configObjects:
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: e86ce3ddbb513be46a7143d4d61f05cf, type: 2}
